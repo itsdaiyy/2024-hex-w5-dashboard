@@ -1,0 +1,71 @@
+<!-- visibility Modal -->
+<div
+  class="modal fade"
+  id="visibilityModal"
+  tabindex="-1"
+  aria-labelledby="visibilityModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-8">
+        <div class="d-flex">
+          <div class="flex-shrink-0 me-6">
+            <img
+              src="../assets/images/emir.jpeg"
+              alt="Emir Wicks's photo"
+              width="141"
+              class="object-fit-cover h-100 rounded-2"
+            />
+          </div>
+          <!-- visibility modal content -->
+          <div class="flex-grow-1 ms-3">
+            <div class="d-flex justify-content-between mb-2">
+              <span>#1</span>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <p>Admin</p>
+            <h2 class="fs-2 fw-bold mb-2">Emir Wicks</h2>
+            <p class="text-gray-600 mb-4">emir.wicks@mail.com</p>
+            <!-- visibility collapse button -->
+            <p class="d-flex justify-content-between">
+              <!-- status tags -->
+              <span class="bg-light py-1 px-2">Verified</span>
+              <button
+                class="btn edit-collapse-btn collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#visibilityCollapse"
+                aria-expanded="false"
+                aria-controls="visibilityCollapse"
+              ></button>
+            </p>
+          </div>
+        </div>
+        <!-- visibility collapse -->
+        <div class="d-flex justify-content-end">
+          <div class="collapse" id="visibilityCollapse">
+            <div
+              class="card card-body flex-row align-items-stretch gap-4 border-0 p-0 pt-8"
+            >
+              <button
+                type="button"
+                class="btn btn-outline-danger px-8 py-2 fw-bold"
+              >
+                Deactivate
+              </button>
+              <button type="button" class="btn btn-primary px-8 py-2">
+                Edit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

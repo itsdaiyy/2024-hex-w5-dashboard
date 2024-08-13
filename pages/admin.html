@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <%- include('./layout/head'); %>
+  <body>
+    <div class="d-flex">
+      <%- include('./layout/sidebar', {page: 'admin'}); -%>
+      <main class="index vh-100 overflow-y-scroll flex-grow-1">
+        <%- include('./layout/admin-header'); %> <%-
+        include('./layout/add-new-modal'); %>
+        <section class="px-8 pb-8 pt-4">
+          <%- include("./layout/table"); %> <%-
+          include("./layout/visibility-modal"); %> <%-
+          include("./layout/edit-modal"); %>
+          <div class="d-flex justify-content-end">
+            <%- include("./layout/table-pagination"); %>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

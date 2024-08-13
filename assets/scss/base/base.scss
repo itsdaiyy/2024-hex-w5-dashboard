@@ -1,0 +1,64 @@
+// base.scss
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+code {
+  font-family: "Roboto Mono", monospace;
+  color: $success;
+  background-color: $gray-100;
+  border-radius: 2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0px;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+select {
+  cursor: pointer;
+}
+
+input:disabled,
+.btn:disabled {
+  cursor: not-allowed;
+}
+
+textarea::placeholder {
+  color: $gray-400;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+  vertical-align: bottom;
+}
+
+.symbols-no-fill {
+  font-variation-settings: "FILL" 0;
+}
+
+button:hover {
+  .material-symbols-outlined,
+  .material-symbols-outlined-no-fill {
+    color: $primary;
+  }
+}
+
+.hover-primary:hover {
+  color: $primary;
+}

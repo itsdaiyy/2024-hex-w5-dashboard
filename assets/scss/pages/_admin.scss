@@ -1,0 +1,11 @@
+.edit-collapse-btn.collapsed {
+  transform: rotate(0deg);
+  background-image: url("../images/ic_arrow_down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.edit-collapse-btn {
+  transform: rotate(180deg);
+  background-image: url("../images/ic_arrow_down.svg");
+}

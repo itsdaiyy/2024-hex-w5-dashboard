@@ -1,0 +1,14 @@
+.index {
+  & .list-group {
+    min-width: 320px;
+  }
+  & .list-group-item.active {
+    background-color: $gray-100;
+    color: $gray-900;
+    border: var(--bs-list-group-border-width) solid
+      var(--bs-list-group-border-color);
+  }
+  & .card_header {
+    background-color: $gray-100;
+  }
+}

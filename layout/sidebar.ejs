@@ -1,0 +1,81 @@
+<aside class="navbar d-block navbar-light bg-light py-0 aside">
+  <div class="container-fluid flex-column align-items-start p-8 vh-100">
+    <div>
+      <h1 class="mb-8">
+        <a class="logo" href="index.html">
+          <img
+            src="../assets/images/logo-ANSWER.svg"
+            alt="Answer Logo"
+            class="d-block"
+          />
+        </a>
+      </h1>
+      <ul class="navbar-nav flex-column gap-6">
+        <li class="nav-item">
+          <a class="nav-link p-0" href="#">
+            <span class="material-symbols-outlined align-bottom me-4">
+              insert_chart </span
+            >Dashboard</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-0" href="#"
+            ><span class="material-symbols-outlined align-bottom me-4">
+              forum </span
+            >Question</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link p-0 <%= page === 'assignment' ? 'active' : '' %>"
+            aria-current="page"
+            href="index.html"
+            ><span class="material-symbols-outlined align-bottom me-4">
+              assignment </span
+            >Assignment</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-0" href="#"
+            ><span class="material-symbols-outlined align-bottom me-4">
+              video_library </span
+            >Course</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link p-0 <%= page === 'admin' ? 'active' : '' %>"
+            href="admin.html"
+            ><span class="material-symbols-outlined align-bottom me-4">
+              group </span
+            >Admin</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link p-0" href="#" tabindex="-1"
+            ><span class="material-symbols-outlined align-bottom me-4">
+              settings </span
+            >Settings</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex">
+      <div class="flex-shrink-0 me-4">
+        <img
+          src="../assets/images/andychen.jpeg"
+          alt="Andy Chen photo"
+          width="48"
+          height="48"
+          class="object-fit-cover rounded-circle"
+        />
+      </div>
+      <div class="flex-grow-1">
+        <p class="fw-bold">Andy Chen</p>
+        <a href="mailto:andy0401@mail.com" class="text-gray-600"
+          >andy0401@mail.com</a
+        >
+      </div>
+    </div>
+  </div>
+</aside>
